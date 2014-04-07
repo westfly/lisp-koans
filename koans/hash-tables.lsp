@@ -20,7 +20,7 @@
     "make hash table with make-hash-table"
   (let ((my-hash-table))
     (setf my-hash-table (make-hash-table))
-    (true-or-false? ___ (typep my-hash-table 'hash-table))
+    (true-or-false? t (typep my-hash-table 'hash-table))
     (true-or-false? ___  (hash-table-p my-hash-table))
     (true-or-false? ___  (hash-table-p (make-array '(3 3 3))))
     (assert-equal ___ (hash-table-count my-hash-table))))
